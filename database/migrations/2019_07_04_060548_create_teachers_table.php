@@ -17,7 +17,6 @@ class CreateTeachersTable extends Migration
             $table->bigIncrements('name');
             $table->string('teacher_id');
             $table->string('initial');
-            $table->string('course_code');
             $table->string('room_number');
             $table->string('mail_id');
             $table->timestamps();

@@ -20,6 +20,13 @@ class CreateNotesTable extends Migration
             $table->bigInteger('flag_count');
             $table->unsignedInteger('status');
             $table->timestamps();
+
+            //Foreign Keys
+                        $table->foreign('course_code')
+                            ->references('course_code')
+                            ->on('courses')
+                            ->onDelete('cascade')
+                            ->onUpdate('cascade');
         });
     }
 
