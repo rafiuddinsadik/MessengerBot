@@ -18,7 +18,7 @@ class CreateNotesTable extends Migration
             $table->string('course_code');
             $table->string('note_link');
             $table->bigInteger('flag_count');
-            $table->unsignedInteger('status');
+            $table->unsignedBigInteger('status');
             $table->timestamps();
 
             //Foreign Keys

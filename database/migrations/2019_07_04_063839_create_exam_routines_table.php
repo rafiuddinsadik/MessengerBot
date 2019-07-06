@@ -22,19 +22,19 @@ class CreateExamRoutinesTable extends Migration
             $table->integer('semester_id');
             $table->timestamps();
 
-            //Foreign Keys
-                        $table->foreign('student_id')
-                            ->references('student_id')
-                            ->on('students')
-                            ->onDelete('cascade')
-                            ->onUpdate('cascade');
-
-                            //Foreign Keys
-                                        $table->foreign('semester_id')
-                                            ->references('id')
-                                            ->on('semesters')
-                                            ->onDelete('cascade')
-                                            ->onUpdate('cascade');
+//            //Foreign Keys
+//                $table->foreign('student_id')
+//                    ->references('student_id')
+//                    ->on('students')
+//                    ->onDelete('cascade')
+//                    ->onUpdate('cascade');
+//
+//            //Foreign Keys
+//                $table->foreign('semester_id')
+//                    ->references('id')
+//                    ->on('semesters')
+//                    ->onDelete('cascade')
+//                    ->onUpdate('cascade');
         });
     }
 

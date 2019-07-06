@@ -21,12 +21,12 @@ class CreateStudentsTable extends Migration
             $table->string('profile_pic');
             $table->timestamps();
 
-            //Foreign Keys
-                        $table->foreign('routine_id')
-                            ->references('routine_id')
-                            ->on('routines')
-                            ->onDelete('cascade')
-                            ->onUpdate('cascade');
+            ///Foreign Keys
+            $table->foreign('routine_id')
+                ->references('routine_id')
+                ->on('routines')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

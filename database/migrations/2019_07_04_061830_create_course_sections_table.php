@@ -15,7 +15,7 @@ class CreateCourseSectionsTable extends Migration
     {
         Schema::create('course_sections', function (Blueprint $table) {
             $table->bigIncrements('section_id');
-            $table->unsignedInteger('slot');
+            $table->unsignedBigInteger('slot');
             $table->integer('teacher_id');
             $table->string('room');
             $table->string('course_code');
@@ -23,17 +23,17 @@ class CreateCourseSectionsTable extends Migration
             $table->timestamps();
 
             //Foreign Keys
-            $table->foreign('teacher_id')
-                ->references('id')
-                ->on('teachers')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-
-            $table->foreign('course_code')
-                ->references('course_code')
-                ->on('courses')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
+//            $table->foreign('teacher_id')
+//                ->references('id')
+//                ->on('teachers')
+//                ->onDelete('cascade')
+//                ->onUpdate('cascade');
+//
+//            $table->foreign('course_code')
+//                ->references('course_code')
+//                ->on('courses')
+//                ->onDelete('cascade')
+//                ->onUpdate('cascade');
         });
     }
 

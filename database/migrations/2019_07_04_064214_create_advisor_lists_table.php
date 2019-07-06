@@ -19,18 +19,18 @@ class CreateAdvisorListsTable extends Migration
             $table->integer('teacher_id');
             $table->dateTime('date_time');
             $table->timestamps();
-            //Foreign Keys
-                        $table->foreign('student_id')
-                            ->references('student_id')
-                            ->on('students')
-                            ->onDelete('cascade')
-                            ->onUpdate('cascade');
-
-                            $table->foreign('teacher_id')
-                            ->references('teacher_id')
-                            ->on('teachers')
-                            ->onDelete('cascade')
-                            ->onUpdate('cascade');
+//            //Foreign Keys
+//                        $table->foreign('student_id')
+//                            ->references('student_id')
+//                            ->on('students')
+//                            ->onDelete('cascade')
+//                            ->onUpdate('cascade');
+//
+//                            $table->foreign('teacher_id')
+//                            ->references('teacher_id')
+//                            ->on('teachers')
+//                            ->onDelete('cascade')
+//                            ->onUpdate('cascade');
         });
     }
 
