@@ -22,11 +22,11 @@ class CreateNotesTable extends Migration
             $table->timestamps();
 
             //Foreign Keys
-                        $table->foreign('course_code')
-                            ->references('course_code')
-                            ->on('courses')
-                            ->onDelete('cascade')
-                            ->onUpdate('cascade');
+            $table->foreign('course_code')
+                ->references('course_code')
+                ->on('courses')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

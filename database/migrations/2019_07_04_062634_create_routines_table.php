@@ -20,17 +20,17 @@ class CreateRoutinesTable extends Migration
             $table->timestamps();
 
 //            //Foreign Keys
-//                        $table->foreign('section_id')
-//                            ->references('section_id')
-//                            ->on('course_sections')
-//                            ->onDelete('cascade')
-//                            ->onUpdate('cascade');
-//
-//                            $table->foreign('semester_id')
-//                            ->references('id')
-//                            ->on('semesters')
-//                            ->onDelete('cascade')
-//                            ->onUpdate('cascade');
+                        $table->foreign('section_id')
+                            ->references('section_id')
+                            ->on('course_sections')
+                            ->onDelete('cascade')
+                            ->onUpdate('cascade');
+
+                            $table->foreign('semester_id')
+                            ->references('id')
+                            ->on('semesters')
+                            ->onDelete('cascade')
+                            ->onUpdate('cascade');
         });
     }
 
